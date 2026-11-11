@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기획서 — APQP Smart Review</title>
+<meta name="robots" content="index,follow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.plan-figs figure{margin:0 0 22px;} .plan-figs img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff;}
+.plan-figs figcaption{font-size:13px;color:var(--sub);text-align:center;margin-top:6px;}
+.plan td{white-space:normal;} .plan td .btn{min-height:36px;white-space:nowrap;}
+h3{font-size:15px;margin:16px 0 6px;} main ul{margin:0 0 10px 20px;}
+:root{--ink:#152232;--sub:#5b6b7b;--line:#d8e0e8;--brand:#154b6e;--bg:#f5f7fa;--container-pad:20px}
+@media (min-width:640px){:root{--container-pad:28px}} @media (min-width:1024px){:root{--container-pad:40px}}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--brand)} .wrap,.topnav-inner{max-width:calc(1100px + 2*var(--container-pad));margin:0 auto;padding:0 var(--container-pad)}
+.topnav{background:#0d3350;color:#fff;position:sticky;top:0;z-index:5} .topnav-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;min-height:56px}
+.topnav-brand{color:#fff;text-decoration:none;font-weight:700} .topnav-brand small{font-weight:400;opacity:.75;margin-left:6px}
+.topnav-links{list-style:none;display:flex;gap:4px;margin:0;padding:0} .topnav-links a{color:#dbe7f0;text-decoration:none;padding:8px 12px;border-radius:8px;display:block} .topnav-links a.active,.topnav-links a:hover{background:rgba(255,255,255,.14);color:#fff}
+.hero{background:linear-gradient(180deg,#154b6e,#0d3350);color:#fff;padding:40px 0 36px} .hero h1{margin:6px 0 10px;font-size:clamp(24px,3.4vw,34px);color:#fff} .hero p{margin:0;opacity:.9;max-width:860px} .eyebrow{font-size:13px;opacity:.8}
+main{padding:28px 0 40px} .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 20px} .sub{color:var(--sub)}
+.tablewrap{overflow-x:auto} table{border-collapse:collapse;width:100%;font-size:14.5px} th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top} th{background:#eef3f7;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:6px 14px;border-radius:8px;border:1px solid var(--brand);text-decoration:none;font-weight:600} .btn.primary{background:var(--brand);color:#fff}
+footer{border-top:1px solid var(--line);padding:20px 0 28px;color:var(--sub);font-size:13.5px}
+</style>
+</head>
+<body>
+<nav class="topnav" aria-label="주요 메뉴">
+  <div class="topnav-inner">
+    <a class="topnav-brand" href="index.html">APQP Smart Review <small>data10-02 · 기획 이준호</small></a>
+    <ul class="topnav-links">
+      <li><a href="index.html">도구</a></li>
+      <li><a href="plan.html" class="active" aria-current="page">기획서</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">현장 데이터 디지털화 전문가과정 · 2차수 · 프로젝트 02 · 기획서 v1.1</div>
+  <h1>APQP Smart Review 기획서</h1>
+  <p>협력사 초도품 APQP 서류(Flow Chart · 관리계획서 · PFMEA · 검사기준서 · 외주품 리스트)를 올리면 서류끼리 공정 · 관리항목을 규칙으로 대조해 누락 · 불일치 · 확인 필요 목록과 승인 의견 제안을 내고, 승인 검토 보고서와 재제출 비교까지 만드는 브라우저 도구입니다. 2026-10-21 제출자 요청으로 보관한 과제입니다.</p>
+</div></header>
+<main><div class="wrap">
+<div class="card">
+  <h2 style="margin-top:0">기획서 내려받기</h2>
+  <p class="sub">파이프라인 · 아키텍처 · 와이어프레임 · 개발일지가 들어간 워드 문서입니다. 버전마다 따로 남깁니다.</p>
+  <div class="tablewrap plan"><table><thead><tr><th>버전</th><th>날짜</th><th>바뀐 점</th><th>파일</th></tr></thead><tbody><tr><td><b>v1.1</b></td><td>2026-11-10</td><td>현 상태 최종 기획서 정리(보관 과제, 추가 개발 없음) / 보관 처리(2026-10-21) · 저장소 비공개 전환(2026-10-26) 반영</td><td><a class="btn primary" href="docs/기획서/data10-02_이준호_APQPSmartReview_기획서_v1.1.docx" download>워드 내려받기</a></td></tr></tbody></table></div>
+</div>
+<div class="card plan">
+  <h2 style="margin-top:0">요구사항과 구현</h2>
+  <div class="tablewrap"><table><thead><tr><th>기획서 요구</th><th>구현</th></tr></thead><tbody><tr><td>문서 간 공정 · 관리항목 정합성 평가</td><td>시작 규칙 8개(켜기 · 끄기 · 심각도 · 기준값) → 적합 · 불일치 · 누락 · 확인 필요, 적합률. 기준값은 가정</td></tr><tr><td>누락 · 불일치 · 확인 필요사항 목록</td><td>판정 목록(판정 · 규칙 · 근거 서류 거르기, 근거 행 보기), 공정 × 서류 대조표</td></tr><tr><td>APQP 승인 검토 보고서</td><td>승인 의견 제안 + 검토자 결정 · 의견 · 보완 요청, AI 문장(반자동), Excel · 인쇄/PDF · Word(.doc). 회사 양식은 받지 못해 기본 양식</td></tr><tr><td>엑셀 서류</td><td>Excel · CSV · 여러 시트 통합 문서, 서류 종류 추정, 머리행 · 두 줄 머리 · 병합 칸, 열 직접 고르기(기억)</td></tr><tr><td>PDF 서류</td><td>글자가 든 PDF 만 시범으로 읽음. 스캔본(OCR) · DRM 파일은 못 읽음 — 미구현</td></tr><tr><td>재제출 확인</td><td>같은 협력사 · 품번의 앞 차수와 비교(고쳐짐 · 남음 · 새로 생김)</td></tr><tr><td>팀 공유 · 협력사 품질 포털(기획서 2단계)</td><td>미구현 — 브라우저마다 따로 저장, JSON 백업으로 옮김</td></tr><tr><td>실제 서류 · 대조 규칙 · 보고서 양식 반영</td><td>미구현 — 자료를 받기 전에 보관</td></tr></tbody></table></div>
+</div>
+<div class="card plan-figs"><h2 style="margin-top:0">그림으로 보기</h2><figure><img src="docs/img/pipeline.png" alt="처리 흐름(파이프라인)" loading="lazy"><figcaption>처리 흐름(파이프라인)</figcaption></figure><figure><img src="docs/img/architecture.png" alt="구성(아키텍처)" loading="lazy"><figcaption>구성(아키텍처)</figcaption></figure><figure><img src="docs/img/wireframe-1.png" alt="와이어프레임 — 정합성 검토" loading="lazy"><figcaption>와이어프레임 — 정합성 검토</figcaption></figure><figure><img src="docs/img/wireframe-2.png" alt="와이어프레임 — 승인 검토 보고서" loading="lazy"><figcaption>와이어프레임 — 승인 검토 보고서</figcaption></figure><figure><img src="docs/img/screen.png" alt="실제 화면(예제 데이터)" loading="lazy"><figcaption>실제 화면(예제 데이터)</figcaption></figure></div>
+<div class="card"><h2 style="margin-top:0">개발일지</h2><h3>2026-11-10 · 현 상태 최종 기획서</h3><ul><li>보관 과제라 화면 · 코드는 그대로 두고 지금 상태를 기획서 v1.1 로 정리</li><li>로직 시험 37개 다시 통과 확인</li><li>이번 회차의 로그인 키트 · v2.0 은 이 과제에 넣지 않음(보관)</li></ul><h3>2026-10-26 · 비공개 전환</h3><ul><li>저장소를 비공개로 바꾸고 README 의 Fork · ZIP 안내를 문의 안내로 교체</li></ul><h3>2026-10-21 · 보관 처리</h3><ul><li>제출자 요청으로 중단 — 같은 분의 과제 07(data10-07) 하나로 진행</li><li>「삭제」 요청은 되돌릴 수 없어 보관으로 대신함. 기준을 보완해 다시 올리면 새 접수로 받기로 함</li><li>허브에서는 「보관 · 보완 후 다시 접수」로 표시</li></ul><h3>2026-10-20 · 1단계</h3><ul><li>기획서 초안 v0.1 과 패들릿 확인 요청 4가지(서류 한 세트 · 대조 규칙 · 보고서 양식 · PDF/DRM 조건)</li><li>정적 웹 도구 — 화면 틀은 과제 07 과 같게, PDF 읽기는 1차수 data09-08 방식</li><li>가상 서류(협력사 B · SMP-2041) 1차 제출에 결함 5가지, 2차 재제출은 고친 세트</li><li>로직 시험 37개, 일부러 깨뜨리기 10가지 확인, 6가지 폭 × 7화면 가로 넘침 0건</li></ul></div>
+</div></main>
+<footer><div class="wrap">현장 데이터 디지털화 전문가과정 · 2차수 · 프로젝트 02 · 기획 이준호 · <a href="https://data10-00.jobability.co.kr/">2차수 프로젝트 모음</a></div></footer>
+</body>
+</html>
